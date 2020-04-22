@@ -16,13 +16,20 @@ namespace Charts
         public Form()
         {
             InitializeComponent();
+
+            ///ustalimay osi wykresu 
+            chart.ChartAreas.First().AxisX.Crossing = 0.0;
+            chart.ChartAreas.First().AxisY.Crossing = 0.0;
+
+            ///kolor osi
+            chart.ChartAreas.First().AxisX.MajorGrid.LineColor = Color.LightGray; 
+            chart.ChartAreas.First().AxisY.MajorGrid.LineColor = Color.LightGray;
+
+            ///ustalenie strzałek
+            chart.ChartAreas.First().AxisX.ArrowStyle = AxisArrowStyle.Triangle; ;
+            chart.ChartAreas.First().AxisY.ArrowStyle = AxisArrowStyle.Triangle;
             buttonAdd_Click(null, null); ///zeby jedna funckja prze uruchomeniu programu już była
             FunctionChanged(); ///żeby wykres był odrazu narysowany
-        }
-
-        private void chart_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -47,13 +54,15 @@ namespace Charts
 
                 s.ChartType = SeriesChartType.Line; ///typ wykresu
 
-                for (double x = -10; x <= 10; x += 0.1)
+                for (double x = -9.9; x < 10; x += 0.1)
                 {
                     s.Points.AddXY(x, f.Value(x)); ///dodajemy do wykresu punkty x i naszę funkcję f(x) = x   
                 }
 
                 chart.Series.Add(s);
             }
+
+            chart.ChartAreas.First().RecalculateAxesScale(); ///przelicza zakres osi
         }
     }
 }
