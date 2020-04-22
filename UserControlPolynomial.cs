@@ -23,7 +23,7 @@ namespace Charts
         {
             get
             {
-                return string.Format("f(x) = {0}*x^2 + {1}", numericUpDownA.Value, numericUpDownB.Value);
+                return string.Format("f(x) = {0}*x + {1}", numericUpDownA.Value, numericUpDownB.Value);
             }
         }
 
@@ -31,7 +31,7 @@ namespace Charts
 
         public double Value(double x)
         {
-            return (double)(numericUpDownA.Value) * x * x + (double)(numericUpDownB.Value);
+            return (double)(numericUpDownA.Value) * x + (double)(numericUpDownB.Value);
         }
 
         private void numericUpDown_ValueChanged(object sender, EventArgs e)
@@ -43,5 +43,7 @@ namespace Charts
                 FunctionChanged();
             }
         }
+
+       
     }
 }

@@ -65,6 +65,7 @@
             this.numericUpDownB.Name = "numericUpDownB";
             this.numericUpDownB.Size = new System.Drawing.Size(101, 26);
             this.numericUpDownB.TabIndex = 3;
+            this.numericUpDownB.ValueChanged += new System.EventHandler(this.numericUpDown_ValueChanged);
             // 
             // numericUpDownA
             // 
@@ -93,7 +94,6 @@
             this.label2.Size = new System.Drawing.Size(33, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "B= ";
-            
             // 
             // label1
             // 
@@ -103,7 +103,6 @@
             this.label1.Size = new System.Drawing.Size(33, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "A= ";
-            
             // 
             // UserControlPolynomial
             // 

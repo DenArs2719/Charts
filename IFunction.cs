@@ -8,5 +8,19 @@ namespace Charts
 {
     interface IFunction
     {
+        string FunctionName
+        {
+            get;
+        }
+
+        double Value(double x);
+
+        event emptyFunction FunctionChanged; ///definicja zdarzenia(eventa)
+
     }
+
+    
+    public delegate void emptyFunction(); ///tworzenie delegata
+
+
 }
