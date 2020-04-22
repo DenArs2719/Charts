@@ -31,6 +31,15 @@ namespace Charts
 
         }
 
-       
+        private void chart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            UserControlPolynomial newPolynomial = new UserControlPolynomial();
+            flowLayoutPanelControls.Controls.Add(newPolynomial); ///dodwanaie controlki
+        }
     }
 }
