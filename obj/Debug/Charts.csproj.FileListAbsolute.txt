@@ -1,0 +1,9 @@
+C:\Users\yevse\Desktop\C#\Charts\bin\Debug\Charts.exe.config
+C:\Users\yevse\Desktop\C#\Charts\bin\Debug\Charts.exe
+C:\Users\yevse\Desktop\C#\Charts\bin\Debug\Charts.pdb
+C:\Users\yevse\Desktop\C#\Charts\obj\Debug\Charts.csprojAssemblyReference.cache
+C:\Users\yevse\Desktop\C#\Charts\obj\Debug\Charts.Form.resources
+C:\Users\yevse\Desktop\C#\Charts\obj\Debug\Charts.Properties.Resources.resources
+C:\Users\yevse\Desktop\C#\Charts\obj\Debug\Charts.csproj.GenerateResource.cache
+C:\Users\yevse\Desktop\C#\Charts\obj\Debug\Charts.exe
+C:\Users\yevse\Desktop\C#\Charts\obj\Debug\Charts.pdb
